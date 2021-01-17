@@ -1,0 +1,115 @@
+/* Variables */
+:root {
+  --primary-color: #1DB394;
+  --darken-primary: #1a967d;
+}
+
+
+/* Reset Style */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Landing Page */
+.landing-page {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  background: #333;
+}
+
+.landing-page video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--primary-color);
+  mix-blend-mode: overlay;
+}
+
+/* Text Content */
+.landing-text {
+  z-index: 4;
+}
+
+.landing-text h2{
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.landing-text h4 {
+  color: #fff;
+  font-size: 1.4rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.subscribe-box {
+  margin-bottom: 3rem;
+}
+.subscribe-box input{
+  color: #ccc;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 300px;
+  background: transparent;
+  border: 2px solid #ccc;
+  margin-right: 2rem;
+}
+
+.subscribe-box input:focus {
+  outline: none;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  background: var(--primary-color);
+  border-radius: 5px;
+  padding: 1.2rem 2rem;
+}
+
+.btn:hover {
+  background: var(--darken-primary);
+}
+
+.socials ul {
+  display: flex;
+}
+
+.socials ul li {
+  margin-right: 1rem;
+  list-style: none;
+}
+
+
+.socials ul li a i{
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.socials ul li a i:hover {
+  color: var(--primary-color);
+}
